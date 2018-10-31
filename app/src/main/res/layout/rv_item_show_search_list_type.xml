@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llItemType"
+    android:background="@color/appBackground"
+    app:cardBackgroundColor="@color/appBackground"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardElevation="2dp">
+
+    <RelativeLayout
+        android:id="@+id/itemType"
+        android:focusable="true"
+        android:clickable="true"
+        android:padding="@dimen/padding"
+        android:focusableInTouchMode="true"
+        android:layout_width="@dimen/searchTypeImgWidth"
+        android:layout_height="@dimen/searchTypeImgHeight">
+
+        <ImageView
+            android:id="@+id/ivItemType"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/sample_dog" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/itemBgWithOpacity">
+
+            <TextView
+                android:id="@+id/tvItemType"
+                style="@style/TextView.Normal"
+                android:gravity="center" />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

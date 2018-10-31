@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".views.activities.LogInActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="@dimen/marginTop_25"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/logoWidth"
+            android:layout_height="@dimen/logoHeight"
+            android:src="@drawable/logo" />
+        <Button
+            android:id="@+id/bnSignIn"
+            style="@style/AppTheme.ButtonStyle"
+            android:layout_marginTop="@dimen/marginTop_25"
+            android:text="Sign In"
+            android:theme="@style/AppTheme.GreenRipple"
+            />
+
+       <TextView
+           style="@style/TextView.Normal"
+           android:layout_marginTop="@dimen/marginTop_25"
+           android:text="@string/sign_up_with"
+           android:gravity="center"
+           />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:layout_marginRight="@dimen/marginTop_25"
+            android:layout_marginLeft="@dimen/marginTop_25"
+            android:layout_marginTop="@dimen/marginTop_25"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="@dimen/minHeightWidthIcon"
+                android:minHeight="@dimen/minHeightWidthIcon"
+                android:src="@drawable/facebook" />
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="@dimen/minHeightWidthIcon"
+                android:minHeight="@dimen/minHeightWidthIcon"
+                android:src="@drawable/ic_twitter" />
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="@dimen/minHeightWidthIcon"
+                android:minHeight="@dimen/minHeightWidthIcon"
+                android:src="@drawable/ic_mail" />
+
+        </LinearLayout>
+
+        <Button
+            style="@style/AppTheme.ButtonStyle"
+            android:layout_marginTop="@dimen/marginTop_25"
+            android:text="Log In as Guest"
+            android:onClick="onClickb"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

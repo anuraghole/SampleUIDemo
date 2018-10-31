@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <de.hdodenhof.circleimageview.CircleImageView
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/colorPrimaryDark"
+        android:id="@+id/civImgProPicOnline"
+        android:layout_margin="3dp"
+        android:padding="@dimen/padding"
+        android:src="@drawable/sample_dog"
+        android:layout_width="@dimen/proPicHeight"
+        android:layout_height="@dimen/proPicHeight" />
+
+</LinearLayout>

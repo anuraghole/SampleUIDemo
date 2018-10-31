@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin"
+            android:layout_marginEnd="@dimen/margin"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civImgProPic"
+                android:layout_width="@dimen/proPicHeight"
+                android:layout_height="@dimen/proPicHeight"
+                android:src="@drawable/dog_image" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvUserName"
+                    style="@style/TextView.Head"
+                    android:text="Beverly Bishop" />
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    style="@style/TextView.Small"
+                    android:text="22 Aug at 2:15pm"
+                    android:textColor="@color/iconsBorder" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end">
+
+                <ImageView
+                    android:id="@+id/ivOption"
+                    android:layout_width="@dimen/proPicHeight"
+                    android:layout_height="@dimen/proPicHeight"
+                    android:padding="@dimen/margin"
+                    android:src="@drawable/ic_option_vert_black_24dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/postedImgHeight"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sample_dog" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            style="@style/TextView.Normal"
+            android:layout_marginStart="@dimen/margin"
+            android:layout_marginEnd="@dimen/margin"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:padding="@dimen/padding"
+            android:text="@string/sample_desc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin"
+            android:layout_marginEnd="@dimen/margin"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/comment_background">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/civProPicInComment"
+                        android:layout_width="@dimen/userProPicHeight"
+                        android:layout_height="@dimen/userProPicHeight"
+                        android:src="@drawable/dog_image" />
+
+                    <TextView
+                        android:id="@+id/tvComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/margin"
+                        android:layout_toEndOf="@id/civProPicInComment"
+                        android:text="Wrrite...." />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ivOpttionFavorite"
+                        android:layout_width="@dimen/userProPicHeight"
+                        android:layout_height="@dimen/userProPicHeight"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/margin"
+                        android:src="@drawable/ic_favourite" />
+
+                    <ImageView
+                        android:id="@+id/ivOpttionComment"
+                        android:layout_width="@dimen/userProPicHeight"
+                        android:layout_height="@dimen/userProPicHeight"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/padding"
+                        android:layout_toEndOf="@+id/ivOpttionFavorite"
+                        android:padding="@dimen/margin"
+                        android:src="@drawable/ic_bookmark" />
+
+                    <ImageView
+                        android:id="@+id/ivOpttionShare"
+                        android:layout_width="@dimen/userProPicHeight"
+                        android:layout_height="@dimen/userProPicHeight"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/padding"
+                        android:layout_toEndOf="@+id/ivOpttionComment"
+                        android:padding="@dimen/margin"
+                        android:src="@drawable/ic_share" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/item_divider"/>
+
+</android.support.v7.widget.CardView>
