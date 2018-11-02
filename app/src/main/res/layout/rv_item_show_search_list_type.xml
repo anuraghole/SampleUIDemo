@@ -10,11 +10,11 @@
     app:cardElevation="2dp">
 
     <RelativeLayout
-        android:id="@+id/itemType"
-        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground"
         android:clickable="true"
+        android:focusable="true"
+        android:id="@+id/itemType"
         android:padding="@dimen/padding"
-        android:focusableInTouchMode="true"
         android:layout_width="@dimen/searchTypeImgWidth"
         android:layout_height="@dimen/searchTypeImgHeight">
 

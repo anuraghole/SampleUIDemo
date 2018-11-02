@@ -75,6 +75,7 @@
             android:layout_marginTop="@dimen/marginTop_25"
             android:text="Log In as Guest"
             android:onClick="onClickb"
+            android:layout_marginBottom="@dimen/margin"
             />
 
     </LinearLayout>

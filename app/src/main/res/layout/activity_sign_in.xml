@@ -69,6 +69,7 @@
             android:id="@+id/bnContinue"
             style="@style/AppTheme.ButtonStyle"
             android:layout_marginTop="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
             android:text="Continue"
             android:theme="@style/AppTheme.GreenRipple" />
 

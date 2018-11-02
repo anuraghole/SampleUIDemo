@@ -6,6 +6,6 @@
     <color name="appBackground">#eeeeee</color>
     <color name="white">#FFFFFF</color>
     <color name="textViewColor">#000000</color>
-    <color name="iconsBorder">#BDBDBD</color>
+    <color name="iconsBorder">#bdbdbd</color>
     <color name="itemBgWithOpacity">#BFffffff</color>
 </resources>

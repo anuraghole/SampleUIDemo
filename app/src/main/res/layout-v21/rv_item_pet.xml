@@ -48,7 +48,7 @@
                 android:gravity="end">
 
                 <ImageView
-                    android:background="?android:attr/selectableItemBackground"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
                     android:clickable="true"
                     android:id="@+id/ivOption"
                     android:layout_width="@dimen/proPicHeight"
@@ -85,7 +85,6 @@
             android:weightSum="2">
 
             <LinearLayout
-                android:background="@drawable/comment_background"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1">
@@ -93,7 +92,7 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                   >
+                    android:background="@drawable/comment_background">
 
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/civProPicInComment"
@@ -124,7 +123,7 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
-                        android:background="?android:attr/selectableItemBackground"
+                        android:background="?android:attr/selectableItemBackgroundBorderless"
                         android:clickable="true"
                         android:id="@+id/ivOpttionFavorite"
                         android:layout_width="@dimen/userProPicHeight"
@@ -134,7 +133,7 @@
                         android:src="@drawable/ic_favourite" />
 
                     <ImageView
-                        android:background="?android:attr/selectableItemBackground"
+                        android:background="?android:attr/selectableItemBackgroundBorderless"
                         android:clickable="true"
                         android:id="@+id/ivOpttionComment"
                         android:layout_width="@dimen/userProPicHeight"
@@ -146,7 +145,7 @@
                         android:src="@drawable/ic_bookmark" />
 
                     <ImageView
-                        android:background="?android:attr/selectableItemBackground"
+                        android:background="?android:attr/selectableItemBackgroundBorderless"
                         android:clickable="true"    
                         android:id="@+id/ivOpttionShare"
                         android:layout_width="@dimen/userProPicHeight"
